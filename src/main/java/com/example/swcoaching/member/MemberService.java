@@ -1,5 +1,5 @@
 package com.example.swcoaching.member;
 
-public interface MemberRepository {
+public interface MemberService {
   Member findByUsername(String username);
 }

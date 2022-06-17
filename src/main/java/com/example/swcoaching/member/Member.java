@@ -1,5 +1,7 @@
 package com.example.swcoaching.member;
 
+import com.example.swcoaching.member.jpa.MemberEntity;
+
 public class Member {
   private final Long id;
   private final String username;
@@ -13,6 +15,11 @@ public class Member {
     this.password = password;
     this.name = name;
     this.remark = remark;
+  }
+
+  public static Member of(MemberEntity memberEntity) {
+    return new Member(memberEntity.getId(), memberEntity.getUsername(), memberEntity.getPassword(),
+            memberEntity.getName(), memberEntity.getRemark());
   }
 
   public Long getId() {
