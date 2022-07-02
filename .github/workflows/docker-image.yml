@@ -39,3 +39,14 @@ jobs:
           push: true
           tags: |
             ghcr.io/${{ github.repository_owner }}/skku-app-test:latest
+      # 슬랙 메세지 전송
+      - name: Slack Notification
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_CHANNEL: general
+          SLACK_COLOR: ${{ job.status }} # or a specific color like 'good' or '#ff00ff'
+          SLACK_ICON: https://github.com/rtCamp.png?size=48
+          SLACK_MESSAGE: 'Post Content :rocket:'
+          SLACK_TITLE: Message Notice
+          SLACK_USERNAME: Github Action
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}      
