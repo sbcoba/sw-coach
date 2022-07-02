@@ -28,6 +28,11 @@ tasks.named('test') {
     useJUnitPlatform()
 }
 
+task logDocker(type: Exec) {
+    workingDir "./infra"
+    commandLine 'docker-compose', 'logs'
+}
+
 task startDocker(type: Exec) {
     workingDir "./infra"
     commandLine 'docker-compose', 'down'
