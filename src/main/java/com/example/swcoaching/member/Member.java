@@ -27,7 +27,7 @@ public class Member {
   }
 
   public String getUsername() {
-    return username;
+    return username + "!";
   }
 
   public String getPassword() {
