@@ -50,5 +50,6 @@ jobs:
           SLACK_ICON: https://github.com/rtCamp.png?size=48
           SLACK_TITLE: Message Notice
           SLACK_USERNAME: Github Action
+          SLACK_COLOR: ${{ job.status }}
           SLACK_FOOTER: '이건 테스트 배포 입니다.'
         if: always()
