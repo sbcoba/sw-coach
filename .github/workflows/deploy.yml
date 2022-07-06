@@ -51,3 +51,4 @@ jobs:
           SLACK_TITLE: Message Notice
           SLACK_USERNAME: Github Action
           SLACK_FOOTER: '이건 테스트 배포 입니다.'
+        if: always()
