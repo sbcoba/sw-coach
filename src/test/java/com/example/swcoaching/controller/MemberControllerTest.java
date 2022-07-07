@@ -1,7 +1,9 @@
-package com.example.swcoaching.member;
+package com.example.swcoaching.controller;
 
 import com.example.swcoaching.controller.BoardController;
 import com.example.swcoaching.controller.MemberController;
+import com.example.swcoaching.member.Member;
+import com.example.swcoaching.member.MemberService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

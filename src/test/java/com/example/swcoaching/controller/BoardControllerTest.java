@@ -1,4 +1,4 @@
-package com.example.swcoaching.member;
+package com.example.swcoaching.controller;
 
 import com.example.swcoaching.board.Board;
 import com.example.swcoaching.board.BoardService;
