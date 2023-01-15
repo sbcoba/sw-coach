@@ -1,3 +1,5 @@
+[![ci](https://github.com/sbcoba/sw-coach/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/sbcoba/sw-coach/actions/workflows/deploy.yml)
+
 ## 개발 환경 만들기
 
 ### 과제 1. IDE 설치
